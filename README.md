@@ -3,6 +3,8 @@ pyMLM is a small python music library management script. If you rip CDs, you min
 
 Example:
 ```md
+# Music Library Index
+
 ## Darkthrone
 - [1992] - A Blaze In The Northern Sky (Studio) [FLAC] [DIGITAL]
 - [2012] - Sempiternal Past The Darkthrone Demos [FLAC] [CD]
