@@ -44,8 +44,8 @@ def create_parser():
     
     parser.add_argument(
         '-o', '--output',
-        default='index.md',
-        help='Index output file (default: index.md or music_library.csv)'
+        default=os.path.join('index', 'album_index.md'),
+        help='Index output file (default: index/album_index.md)'
     )
     
     return parser
@@ -208,6 +208,9 @@ def main():
         print("Please specify an action flag: -r/--rename (to rename and index) or -i/--index (to index only).")
         return 0
 
+    output_dir = os.path.dirname(args.output)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
 
     if is_csv:
         with open(args.output, "w", newline="", encoding="utf-8") as f:

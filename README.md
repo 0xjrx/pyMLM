@@ -10,3 +10,5 @@ Example:
 - [2012] - Sempiternal Past The Darkthrone Demos [FLAC] [CD]
 - [2022] - Astral Fortress [FLAC] [CD]
 ```
+
+Generated indexes are written to `index/album_index.md` by default. Use `--output` to choose a different output file, for example `--output index/music_library.csv` for a CSV index.
